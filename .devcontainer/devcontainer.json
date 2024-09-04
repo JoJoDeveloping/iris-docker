@@ -1,8 +1,10 @@
 {
-  "image": "eskehoy/aufsv22:8.17.1",
+  "image": "ghcr.io/jojodeveloping/iris-docker:vmi24",
   "customizations": {
     "vscode": {
-      "extensions": ["coq-community.vscoq1"],
+      "extensions": [
+        "coq-community.vscoq1"
+      ],
       "settings": {
         "files.exclude": {
           "**/*.aux": true,
