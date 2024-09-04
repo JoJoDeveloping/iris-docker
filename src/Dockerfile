@@ -1,4 +1,4 @@
-ARG COQ_IMAGE=coqorg/coq:8.18.2-ocaml-4.14.2-flambda
+ARG COQ_IMAGE=coqorg/coq:8.18.0-ocaml-4.14.2-flambda
 FROM ${COQ_IMAGE}
 
 LABEL org.opencontainers.image.source "https://github.com/JoJoDeveloping/iris-docker"
