@@ -16,11 +16,13 @@
           "**/.*.cache": true
         },
         "coq.loadCoqProject": true,
-        "coq.coqProjectRoot": "./coq",
+        "coq.coqProjectRoot": ".",
         "[coq]": {
           "editor.tabSize": 2,
           "editor.insertSpaces": true
         },
+        "vscoq.path": "/home/coq/.opam/4.14.2+flambda/bin/vscoqtop",
+        "editor.unicodeHighlight.ambiguousCharacters": false,
         "generic-input-methods.input-methods": [
           {
             "name": "Iris Math",
