@@ -29,12 +29,6 @@ See [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.
 ### Running `Dev Containers: Reopen in Container` cannot find the container
 Make sure you copied the `.devcontainer` folder to your project's root folder and that it includes the `devcontainer.json` file.
 
-### `Cannot find a physical path bound to logical path X with prefix Y` when importing a file
-* Make sure that the Rocq files have been compiled. Run `make` to compile the project files.
-* If the `_CoqProject` files are not located in the project root folder you need to either
-  * Move the files to the root project folder
-  * Or add the line `"coq.coqProjectRoot": "PATH_TO_COQPROJECT"` (in `.devcontainer/devcontainer.json` to point to the directory where `_CoqProject` is located. Restarting the docker container is required after this step.
-
 ### Problems on Apple Silicon
 Run `docker pull --platform linux/amd64 <the docker link>` to force the `x86` version of the Docker container to be installed.
 This should then trick Docker into using some kind of emulation, and the software should work natively.
