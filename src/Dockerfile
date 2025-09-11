@@ -1,9 +1,9 @@
-ARG COQ_IMAGE=coqorg/coq:8.18.0-ocaml-4.14.2-flambda
-FROM ${COQ_IMAGE}
+ARG ROCQ_IMAGE=rocq/rocq-prover:9.0.0-ocaml-4.14.2-flambda
+FROM ${ROCQ_IMAGE}
 
 LABEL org.opencontainers.image.source=https://github.com/plf-lab-ethz/iris-docker
 
-ARG OPAM_PACKAGES="coq-stdpp.1.9.0 coq-equations.1.3+8.18 vscoq-language-server=2.1.7"
+ARG OPAM_PACKAGES="coq-stdpp.1.12.0 rocq-equations.1.3.1+9.0 vscoq-language-server=2.2.6"
 
 # Install opam packages
 RUN opam update && \
