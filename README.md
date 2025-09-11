@@ -1,7 +1,7 @@
 # iris-docker
 Docker container based on [4ever2's au-fsv](https://github.com/4ever2/au-fsv22) docker container.
-The container can be used for easy cross-platform Coq/Iris development using Visual Studio Code.
-The container configuration will automatically install the VsCoq extension for Visual Studio Code and configure Coq-related settings.
+The container can be used for easy cross-platform Rocq/Iris development using Visual Studio Code.
+The container configuration will automatically install the VsRocq extension for Visual Studio Code and configure Rocq-related settings.
 
 The precise software used in this image can be found in `src/Dockerfile`.
 
@@ -30,7 +30,7 @@ See [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.
 Make sure you copied the `.devcontainer` folder to your project's root folder and that it includes the `devcontainer.json` file.
 
 ### `Cannot find a physical path bound to logical path X with prefix Y` when importing a file
-* Make sure that the Coq files have been compiled. Run `make` to compile the project files.
+* Make sure that the Rocq files have been compiled. Run `make` to compile the project files.
 * If the `_CoqProject` files are not located in the project root folder you need to either
   * Move the files to the root project folder
   * Or add the line `"coq.coqProjectRoot": "PATH_TO_COQPROJECT"` (in `.devcontainer/devcontainer.json` to point to the directory where `_CoqProject` is located. Restarting the docker container is required after this step.
