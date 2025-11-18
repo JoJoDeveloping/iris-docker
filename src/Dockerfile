@@ -3,7 +3,7 @@ FROM ${ROCQ_IMAGE}
 
 LABEL org.opencontainers.image.source=https://github.com/plf-lab-ethz/iris-docker
 
-ARG OPAM_PACKAGES="coq-stdpp.1.12.0 rocq-equations.1.3.1+9.0 coq-autosubst.1.9 vscoq-language-server=2.2.6"
+ARG OPAM_PACKAGES="coq-stdpp.1.12.0 rocq-equations.1.3.1+9.0 coq-autosubst.1.9 vsrocq-language-server=2.3.2"
 
 # Install opam packages
 RUN opam update && \
