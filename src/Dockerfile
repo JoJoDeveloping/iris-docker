@@ -1,4 +1,4 @@
-ARG ROCQ_IMAGE=rocq/rocq-prover:9.0.0-ocaml-4.14.2-flambda
+ARG ROCQ_IMAGE=rocq/rocq-prover:9.0-ocaml-4.14-flambda
 FROM ${ROCQ_IMAGE}
 
 LABEL org.opencontainers.image.source=https://github.com/plf-lab-ethz/iris-docker
